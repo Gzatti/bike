@@ -6,6 +6,7 @@
   --sub: #c6c6c6;
   --detalhe: red;
   --hover: #900;
+  --titulo: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@
   --sub: #F0F0F0;
   --detalhe: green;
   --hover: rgb(0, 92, 0);
+  --titulo: #F0F0F0;
 }
 }
 
