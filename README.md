@@ -4,6 +4,10 @@
 
 Este projeto é uma aplicação simples desenvolvida para aprender os fundamentos de **HTML** e **CSS**. O objetivo é criar uma página web responsiva, estilizada de forma básica, com o tema de uma bicicleta, utilizando apenas as tecnologias mencionadas. Durante o desenvolvimento, o foco foi entender a estrutura de uma página HTML, a organização de conteúdo e como aplicar estilos utilizando CSS.
 
+## 🌐 Acesse
+
+Você pode visualizar o portfólio online aqui: [https://gzatti.github.io/bike]
+
 ## ⚙️ Funcionalidades
 
 - 📄 **Estrutura de Página**: A página contém uma descrição da bicicleta, suas características e especificações.
