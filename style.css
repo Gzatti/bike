@@ -1,5 +1,5 @@
 :root {
-  --fundo: #dfdfdf;  
+  --fundo: #dfdfdf;
   --primaria: #fff;
   --text: #000;
   --vantagens: #f7f7f7;
@@ -11,15 +11,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --fundo: #696969;
-  --primaria: #303030;
-  --text: #fff;  
-  --vantagens: #383838;
-  --sub: #F0F0F0;
-  --detalhe: green;
-  --hover: rgb(0, 92, 0);
-  --titulo: #F0F0F0;
-}
+    --fundo: #696969;
+    --primaria: #303030;
+    --text: #fff;
+    --vantagens: #383838;
+    --sub: #f0f0f0;
+    --detalhe: green;
+    --hover: rgb(0, 92, 0);
+    --titulo: #f0f0f0;
+  }
 }
 
 html {
@@ -53,7 +53,6 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
-
 }
 
 ul {
@@ -97,8 +96,7 @@ ul a {
   border-radius: 0.31rem;
   color: var(--text);
   text-transform: uppercase;
-  border:0.15rem solid transparent;
-
+  border: 0.15rem solid transparent;
 }
 
 ul a:hover {
@@ -109,7 +107,6 @@ ul a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 62.5rem;
-
 }
 
 .introducao {
@@ -125,7 +122,7 @@ ul a:hover {
 }
 
 .introducao::after {
-  content: '';
+  content: "";
   margin: 0rem;
   position: absolute;
   background-color: var(--detalhe);
@@ -154,7 +151,7 @@ ul a:hover {
 
 .botao:hover {
   background-color: var(--hover);
-  transition-duration: 0.5s
+  transition-duration: 0.5s;
 }
 
 .sub {
@@ -189,7 +186,6 @@ ul a:hover {
 .vantagens-item:hover {
   border-left: 2px solid var(--detalhe); /*Essa borda maior que a outra da a sensação de seleção*/
   background: var(--primaria);
-
 }
 
 /*Solução feita por mim*/
@@ -202,8 +198,6 @@ ul a:hover {
   position: absolute;
 }*/
 
-
-
 .vantagens-item:hover:nth-child(1n) {
   background-color: var(--vantagens);
 }
@@ -213,8 +207,8 @@ ul a:hover {
 }
 
 .icon {
-    color: var(--detalhe); 
-    height: 25px;
+  color: var(--detalhe);
+  height: 25px;
 }
 
 footer {
@@ -229,7 +223,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -243,13 +236,12 @@ footer {
 
   ul li {
     background: 100vh;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: var(--primaria);
   }
   ul a:hover {
     border: var(--primaria);
   }
-
 
   body {
     gap: 1.2rem;
@@ -275,7 +267,4 @@ footer {
     height: 100%;
     object-fit: cover;
   }
-
-
-
-} 
+}
