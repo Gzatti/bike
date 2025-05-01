@@ -1,0 +1,279 @@
+:root {
+  --fundo: #dfdfdf;  
+  --primaria: #fff;
+  --text: #000;
+  --vantagens: #f7f7f7;
+  --sub: #c6c6c6;
+  --detalhe: red;
+  --hover: #900;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --fundo: #696969;
+  --primaria: #303030;
+  --text: #fff;  
+  --vantagens: #383838;
+  --sub: #F0F0F0;
+  --detalhe: green;
+  --hover: rgb(0, 92, 0);
+}
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: arial, Helvetica, sans-serif;
+  margin: 0rem;
+  background: var(--fundo);
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+  margin-top: 3.75rem;
+}
+
+header {
+  align-items: center;
+}
+
+.titulo {
+  color: var(--sub);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.bc img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0rem;
+  margin: 1rem 0rem;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+/*configurações de .menu inseridadas dentro do UL*/
+/*.menu {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3.5rem;
+}*/
+
+ul a {
+  background: var(--primaria);
+  padding: 0.93rem 1.87rem;
+  border-radius: 0.31rem;
+  color: var(--text);
+  text-transform: uppercase;
+  border:0.15rem solid transparent;
+
+}
+
+ul a:hover {
+  border-color: var(--detalhe);
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+
+}
+
+.introducao {
+  background: var(--primaria);
+  color: var(--text);
+  text-align: right;
+  padding: 2.5rem;
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 1.25rem;
+  justify-items: end;
+}
+
+.introducao::after {
+  content: '';
+  margin: 0rem;
+  position: absolute;
+  background-color: var(--detalhe);
+  width: 3.75rem;
+  height: 0.25rem;
+  top: 1.8575rem;
+  right: -1.8575rem;
+}
+
+/*.detalhe {
+  width: 3.75rem;
+  height: 0.25rem;
+  background: #ee2211;
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}*/
+
+.botao {
+  background: var(--detalhe);
+  color: var(--text);
+  padding: 0.9375rem 1.87rem;
+  border-radius: 0.3125rem;
+  text-transform: uppercase;
+}
+
+.botao:hover {
+  background-color: var(--hover);
+  transition-duration: 0.5s
+}
+
+.sub {
+  background-image: url(./img/onda.svg);
+  background-size: 800px;
+  height: 24rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--sub);
+  text-align: right;
+  padding: 2.5rem;
+  align-self: center;
+  align-content: center;
+  /*word-break: break-all;*/
+}
+
+.vantagens {
+  background: var(--primaria);
+  color: var(--text);
+  padding: 2.5rem;
+}
+
+.vantagens-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+  border-left: 2px solid var(--primaria); /*Se quiser que fique uma sensação de pulo no elemento, é só tirar essa dorda*/
+}
+
+.vantagens-item:hover {
+  border-left: 2px solid var(--detalhe); /*Essa borda maior que a outra da a sensação de seleção*/
+  background: var(--primaria);
+
+}
+
+/*Solução feita por mim*/
+/*.vantagens-item:hover::after {
+  content: '';
+  background-color: #ee2211;
+  height: 100%;
+  width: .2rem;
+  margin: 0rem;
+  position: absolute;
+}*/
+
+
+
+.vantagens-item:hover:nth-child(1n) {
+  background-color: var(--vantagens);
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.icon {
+    color: var(--detalhe); 
+    height: 25px;
+}
+
+footer {
+  font-size: 1.2rem;
+  width: 100%;
+  background-color: var(--primaria);
+  color: var(--text);
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+@media (max-width: 1000px) {
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  ul a {
+    display: grid;
+    padding: 15px 80px;
+    justify-self: center;
+    border: var(--primaria);
+  }
+
+  ul li {
+    background: 100vh;
+    border-radius: .5rem;
+    background-color: var(--primaria);
+  }
+  ul a:hover {
+    border: var(--primaria);
+  }
+
+
+  body {
+    gap: 1.2rem;
+    margin: 1.5rem auto;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .sub {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .introducao::after {
+    display: none;
+  }
+
+  .introducao {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .bc img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+} 
