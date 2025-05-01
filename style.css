@@ -41,7 +41,7 @@ header {
 }
 
 .titulo {
-  color: var(--sub);
+  color: var(--titulo);
 }
 
 img {
