@@ -229,7 +229,7 @@ footer {
   }
   ul a {
     display: grid;
-    padding: 15px 80px;
+    padding: 15px 60px;
     justify-self: center;
     border: var(--primaria);
   }
@@ -266,5 +266,50 @@ footer {
   .bc img {
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  ul a {
+    font-size: .8rem;
+    padding: 10px 40px;
+  }
+
+  .introducao {
+    font-size: .8rem;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+
+  .botao {
+    padding: 0.7rem 1.2rem;
+    font-size: .8rem;
+  }
+
+  .sub {
+    font-size: 2.5rem;
+  }
+
+  .vantagens-item {
+    font-size: .9rem;
+  }
+
+  .icon {
+    height: 22px;
+  }
+
+  .vantagens-item p {
+    font-size: .9rem;
+  }
+
+  footer {
+    font-size: .9rem;
   }
 }
