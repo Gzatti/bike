@@ -152,6 +152,7 @@ ul a:hover {
 .botao:hover {
   background-color: var(--hover);
   transition-duration: 0.5s;
+  color: #f7f7f7;
 }
 
 .sub {
