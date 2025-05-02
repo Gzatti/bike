@@ -7,6 +7,7 @@
   --detalhe: red;
   --hover: #900;
   --titulo: #000;
+  --onda: url(./img/onda-clara.svg);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
     --detalhe: green;
     --hover: rgb(0, 92, 0);
     --titulo: #f0f0f0;
+    --onda: url(./img/onda-escura.svg);
   }
 }
 
@@ -156,12 +158,12 @@ ul a:hover {
 }
 
 .sub {
-  background-image: url(./img/onda.svg);
+  background-image: var(--onda);
   background-size: 800px;
   height: 24rem;
   font-size: 4rem;
   text-transform: uppercase;
-  color: var(--sub);
+  color: var(--primaria);
   text-align: right;
   padding: 2.5rem;
   align-self: center;
